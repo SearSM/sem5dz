@@ -17,7 +17,7 @@ int[] MakeNewRandomArray(int size, int beginValue, int endValue)
     int[] array = new int[size];
     for (int i = 0; i < size; i++)
     {
-        array[i] = new Random().Next(beginValue, endValue);
+        array[i] = new Random().Next(beginValue, endValue + 1);
     }
     return array;
 }
